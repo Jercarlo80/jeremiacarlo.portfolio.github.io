@@ -13,10 +13,10 @@ const Home = () => {
     <div id="home" name="home" className="p-4 md:p-8">
       <div className="md:flex md:flex-row flex flex-col md:justify-between">
         <div className="flex flex-col gap-4 md:mt-[280px] mt-[100px] md:ml-[160px] ml-[0px]">
-          <h1 className="md:w-[553px] w-[230px] md:text-[50px] text-[35px] font-bold">
+          <h1 className="md:w-[553px] w-[430px] md:text-[50px] text-[35px] font-bold">
             Jeremia Carlo
           </h1>
-          <h1 className="md:w-[553px] w-[340px] md:text-[50px] text-[35px] font-bold">
+          <h1 className="md:w-[553px] w-[540px] md:text-[50px] text-[35px] font-bold">
             Christianto Silitonga
           </h1>
 
@@ -26,7 +26,7 @@ const Home = () => {
           <p className="md:w-[500px] w-[350px] md:text-[35px] text-[25px] font-extralight">
             {typeEffect1}
           </p>
-          <h2 className="md:w-[554px] w-[350px] h-[79px] md:text-[40px] text-[28px] text-[#0190ff] font-extrabold">
+          <h2 className="md:w-[554px] w-[550px] h-[79px] md:text-[40px] text-[28px] text-[#0190ff] font-extrabold">
             Front End Web Developer
           </h2>
         </div>
