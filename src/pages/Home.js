@@ -11,12 +11,12 @@ const Home = () => {
   });
   return (
     <div id="home" name="home" className="p-4 md:p-8">
-      <div className="md:flex md:flex-row flex flex-col md:justify-between">
-        <div className="flex flex-col gap-4 md:mt-[280px] mt-[100px] md:ml-[160px] ml-[0px]">
-          <h1 className="md:w-[553px] w-[430px] md:text-[50px] text-[35px] font-bold">
+      <div className="md:flex md:flex-row flex flex-col md:justify-between md:w-full w-[554px]">
+        <div className="flex flex-col gap-4 md:mt-[280px] mt-[100px] md:ml-[160px] ml-[40px]">
+          <h1 className="md:w-[553px] w-[500px] lg:text-[50px] md:text-[50px] text-[45px] font-bold">
             Jeremia Carlo
           </h1>
-          <h1 className="md:w-[553px] w-[540px] md:text-[50px] text-[35px] font-bold">
+          <h1 className="md:w-[553px] w-[500px] lg:text-[50px] md:text-[50px] text-[45px] font-bold">
             Christianto Silitonga
           </h1>
 
@@ -26,13 +26,13 @@ const Home = () => {
           <p className="md:w-[500px] w-[350px] md:text-[35px] text-[25px] font-extralight">
             {typeEffect1}
           </p>
-          <h2 className="md:w-[554px] w-[550px] h-[79px] md:text-[40px] text-[28px] text-[#0190ff] font-extrabold">
+          <h2 className="md:w-[554px] w-[500px] h-[79px] md:text-[40px] text-[40px] text-[#0190ff] font-extrabold">
             Front End Web Developer
           </h2>
         </div>
-        <div className="md:mt-[214px] md:mr-[120px] ml-[20px] ">
+        <div className="md:mt-[214px] md:mr-[120px] ml-[10px] ">
           <img
-            className="md:w-[581px] w-[280px] h-[261px] md:h-[512px]"
+            className="md:w-[581px] w-[680px] h-[501px] md:h-[512px]"
             src={Code}
           />
         </div>
