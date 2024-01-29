@@ -48,7 +48,18 @@ export default function LabTabs() {
   };
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="md:flex 
+    md:justify-center 
+    md:items-center 
+    flex 
+    justify-center 
+    items-center
+    lg:flex 
+    lg:justify-center 
+    lg:items-center
+    sm:flex 
+    sm:justify-center 
+    sm:items-center">
       <Box sx={{ width: "100%" }}>
         <div className="flex justify-center items-center">
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>

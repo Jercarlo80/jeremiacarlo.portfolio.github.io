@@ -6,8 +6,8 @@ import Antria from "../assets/Antria.png";
 
 const Card = () => {
   return (
-    <div className="md:w-[1183px] w-[340px] md:h-[1489px] h-[650px] bg-[#D9D9D9] rounded-xl shadow-lg shadow-gray-700">
-      <div className="md:flex md:flex-col flex gap-12 overflow-x-auto md:w-[1200px] w-[320px] md:h-[1489px] h-[1400px]">
+    <div className="md:w-[1183px] w-[450px] md:h-[1489px] h-[650px] bg-[#D9D9D9] rounded-xl shadow-lg shadow-gray-700">
+      <div className="md:flex md:flex-col flex gap-12 overflow-x-auto md:w-[1200px] w-[420px] md:h-[1489px] h-[1400px]">
         <div className="md:flex flex-row mt-[51px] ml-[28px]">
           <img
             className="md:w-[530px] w-[440px] md:ml-0 ml-[21px]"
