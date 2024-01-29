@@ -10,10 +10,10 @@ const Home = () => {
     deleteSpeed: 40,
   });
   return (
-    <div id="home" name="home" className="p-4 md:p-8">
+    <div id="home" name="home" className="p-4 lg:p-8">
       <div className="md:flex md:flex-row flex flex-col justify-center items-center md:justify-between md:w-full w-[554px]">
         <div className="flex flex-col gap-4 md:mt-[280px] mt-[100px] md:ml-[160px] ml-[40px]">
-          <h1 className="md:w-[553px] w-[500px] lg:text-[50px] md:text-[50px] text-[45px] font-bold">
+          <h1 className="md:w-[553px] w-[500px] lg:text-[50px] text-red-500 md:text-[50px] text-[45px] font-bold">
             Jeremia Carlo
           </h1>
           <h1 className="md:w-[553px] w-[500px] lg:text-[50px] md:text-[50px] text-[45px] font-bold">
