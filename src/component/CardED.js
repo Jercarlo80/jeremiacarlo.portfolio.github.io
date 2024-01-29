@@ -16,6 +16,7 @@ const CardED = () => {
                 Bachelor’s computer, Computer Software Engineering
               </h2>
               <h1 className="text-[18px] font-semibold">2020 - 2024</h1>
+              <h1 className="text-[18px] font-medium">Current GPA <span className="font-semibold">3.55</span> out of <span className="font-semibold">4.0</span></h1>
             </div>
           </div>
         </div>
