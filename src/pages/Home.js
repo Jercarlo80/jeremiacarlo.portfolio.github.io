@@ -4,7 +4,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Home = () => {
   const [typeEffect1] = useTypewriter({
-    words: ["Welcome to my personal website"],
+    words: ["Welcome to my personal website", "I am Software Engineer 💻"],
     loop: {},
     typeSpeed: 100,
     deleteSpeed: 40,
@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <div id="home" name="home" className="p-4 lg:p-8">
       <div className="md:flex md:flex-row flex flex-col justify-center items-center md:justify-between md:w-full w-[554px]">
-        <div className="flex flex-col gap-4 md:mt-[280px] mt-[100px] md:ml-[160px] ml-[40px]">
-          <h1 className="md:w-[553px] w-[500px] lg:text-[50px] text-red-500 md:text-[50px] text-[45px] font-bold">
+        <div className="flex flex-col gap-4 md:mt-[280px] mt-[100px] md:ml-[160px] ml-[30px]">
+          <h1 className="md:w-[553px] w-[500px] lg:text-[50px] md:text-[50px] text-[45px] font-bold">
             Jeremia Carlo
           </h1>
           <h1 className="md:w-[553px] w-[500px] lg:text-[50px] md:text-[50px] text-[45px] font-bold">
@@ -30,9 +30,9 @@ const Home = () => {
             Front End Web Developer
           </h2>
         </div>
-        <div className="md:mt-[214px] md:mr-[120px] ml-[10px] ">
+        <div className="md:mt-[214px] md:mr-[120px]">
           <img
-            className="md:w-[581px] w-[680px] h-[501px] md:h-[512px]"
+            className="md:w-[581px] w-[450px] h-[401px] md:h-[512px]"
             src={Code}
           />
         </div>

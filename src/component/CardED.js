@@ -4,7 +4,7 @@ import Telu from "../assets/Telu.png";
 
 const CardED = () => {
   return (
-    <div className="md:w-[1183px] w-[340px] md:h-[450px] h-[350px] bg-[#D9D9D9] rounded-xl shadow-lg shadow-gray-700">
+    <div className="md:w-[1183px] w-[450px] md:h-[450px] h-[350px] bg-[#D9D9D9] rounded-xl shadow-lg shadow-gray-700">
       <div className="flex flex-row ml-[50px] pt-[55px]">
         <img className="md:w-[25px] w-[32px] md:h-[305px] h-[252px]" src={DotLine2} />
         <div className="flex flex-col overflow-scroll md:w-[474px] w-[474px]">

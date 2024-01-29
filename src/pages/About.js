@@ -9,10 +9,21 @@ const About = () => {
     <div
       id="about"
       name="about"
-      className="flex flex-col justify-center items-center pt-[50px]"
+      className="
+      md:w-full 
+      w-[550px] 
+      flex flex-col 
+      justify-center 
+      items-center 
+      md:flex 
+      md:flex-col 
+      md:justify-center 
+      md:items-center
+      pt-[50px]
+      "
     >
       <h1 className="text-center m-5 md:text-[45px] text-[40px]">About Me</h1>
-      <div className="md:w-[1183px] w-[340px] md:h-[589px] h-[650px] bg-[#D9D9D9] rounded-xl shadow-lg shadow-gray-700">
+      <div className="md:w-[1183px] w-[450px] md:h-[589px] h-[650px] bg-[#D9D9D9] rounded-xl shadow-lg shadow-gray-700">
         <div
           className="
           md:flex 
@@ -33,11 +44,11 @@ const About = () => {
           <div className="md:mt-[63px] md:ml-0 ml-[20px] md:mr-[46px]">
             <img className="md:w-[388px] md:h-[467px] w-[300px]" src={ImagePerson} />
           </div>
-          <div className="flex flex-col md:gap-14 gap-3 md:mt-[63px] mt-[20px] md:ml-[46px] ml-[20px] ">
-            <h1 className="md:w-[583px] w-[300px] h-[90px] md:text-[50px] text-[30px] font-bold text-[#0190ff]">
+          <div className="flex flex-col md:gap-14 gap-1 md:mt-[63px] mt-[20px] md:ml-[46px] ml-[20px] ">
+            <h1 className="md:w-[583px] w-[350px] md:h-[90px] h-[100px] md:text-[50px] text-[30px] font-bold text-[#0190ff]">
               Jeremia Carlo Christianto Silitonga
             </h1>
-            <p className="md:w-[629px] w-[290px] md:text-[24px] text-[18px] text-justify font-extralight  ">
+            <p className="md:w-[629px] w-[400px] md:text-[24px] text-[18px] text-justify font-extralight  ">
               As a software engineering student with a strong passion for the
               field. I have developed a particular interest in Front End Web
               Development. I'm. always upgrade my knowledge and skills in these

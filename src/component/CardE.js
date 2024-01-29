@@ -6,7 +6,7 @@ import DotLine2 from "../assets/DotLine2.png";
 
 const CardE = () => {
   return (
-    <div className="md:w-[1183px] w-[340px] md:h-[450px] h-[500px] bg-[#D9D9D9] rounded-xl shadow-lg shadow-gray-700">
+    <div className="md:w-[1183px] w-[450px] md:h-[450px] h-[500px] bg-[#D9D9D9] rounded-xl shadow-lg shadow-gray-700">
       <div className="flex flex-row md:ml-[50px] ml-[20px] md:pt-[55px] pt-[30px] ">
         <img className="md:w-[25px] w-[32px] md:h-[305px] h-[452px]" src={DotLine3} />
         <div className="flex flex-col overflow-scroll md:w-[474px] w-[474px]">

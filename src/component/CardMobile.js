@@ -6,8 +6,8 @@ import Antria from "../assets/Antria.png";
 
 const CardMobile = () => {
   return (
-    <div className="md:w-[1183px] w-[340px] md:h-[1489px] h-[650px] bg-[#D9D9D9] rounded-xl shadow-lg shadow-gray-700">
-      <div className="flex flex-col gap-12 md:w-[1100px] w-[300px] overflow-x-auto overflow-y-hidden">
+    <div className="md:w-[1183px] w-[450px] md:h-[1489px] h-[650px] bg-[#D9D9D9] rounded-xl shadow-lg shadow-gray-700">
+      <div className="flex flex-col gap-12 md:w-[1100px] w-[420px] md:h-[1489px] h-[600px] overflow-x-auto overflow-y-hidden">
         <div className="flex flex-row mt-[51px] ml-[28px]">
           <img
             className="w-[250px] h-[500px] "
