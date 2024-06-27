@@ -30,7 +30,7 @@ export default function Home() {
         <h2 className="text-3xl mt-4 font-extralight">
           I am <span className="font-bold">{typeEffect}</span>
         </h2>
-        <div className="flex gap-x-[1rem] lg:relative relative lg:top-[18rem] top-[12rem]">
+        <div className="flex gap-x-[1rem] lg:relative relative lg:top-[18rem] top-[9rem]">
           <button
             className="
           text-white
