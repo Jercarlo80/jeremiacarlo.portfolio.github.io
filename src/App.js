@@ -1,19 +1,17 @@
 import React from 'react';
 import Navbar from './component/Navbar';
 import Home from './pages/Home';
-import Portofolio from './pages/Portofolio';
-import About from './pages/About';
+import AboutMe from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
 import Experience from './pages/Experience';
 
 function App() {
-
   return (
-    <div>
+    <div className='bg-black w-full h-full'>
       <Navbar/>
       <Home/>
-      
-      <Portofolio/>
-      <About/>
+      <AboutMe/>
+      <Portfolio/>
       <Experience/>
     </div>
   )

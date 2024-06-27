@@ -11,13 +11,13 @@ const Navbar = () => {
     },
     {
       id: 2,
-      link: "PORTFOLIO",
-      href: "#portfolio",
+      link: "ABOUT ME",
+      href: "#about",
     },
     {
       id: 3,
-      link: "ABOUT ME",
-      href: "#about",
+      link: "PORTFOLIO",
+      href: "#portfolio",
     },
     {
       id: 4,
@@ -31,21 +31,21 @@ const Navbar = () => {
     setNavOpen(!navOpen);
   };
   return (
-    <div className="flex justify-center items-center w-full h-20 px-4 fixed bg-white pt-5">
+    <div className="flex justify-center items-center w-full h-20 px-4 fixed bg-transparent pt-5 z-50">
       <ul className="hidden md:flex">
         {links.map(({ id, link, href }) => (
           <li
             key={id}
             className="
               px-4 
-              text-gray-500 
+              text-white
+              font-bold
               hover:scale-110 
               duration-200 
-              hover:text-[#0190ff] 
               cursor-pointer
             "
           >
-            <a href={href}>{link}</a>
+            <a className="" href={href}>{link}</a>
           </li>
         ))}
       </ul>
@@ -54,9 +54,9 @@ const Navbar = () => {
         className="cursor-pointer md:hidden flex justify-end items-end"
       >
         {navOpen ? (
-          <RxCross1 className="z-20" color="#0190ff" size={30} />
+          <RxCross1 className="z-20" color="white" size={30} />
         ) : (
-          <GiHamburgerMenu color="#0190ff" size={30} />
+          <GiHamburgerMenu color="white" size={30} />
         )}
         {navOpen && (
           <ul
@@ -70,8 +70,7 @@ const Navbar = () => {
             left-0
             w-full
             h-screen
-            bg-white
-            
+            bg-black
             text-black
           "
           >
@@ -85,7 +84,7 @@ const Navbar = () => {
                   text-gray-500 
                   hover:scale-110 
                   duration-200 
-                  hover:text-[#0190ff] 
+                  hover:text-[#ffff] 
                   cursor-pointer
                 "
               >

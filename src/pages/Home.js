@@ -1,44 +1,57 @@
 import React from "react";
-import Code from "../assets/Image1.png";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import JakartaImage from "../assets/Jkt.png";
+import { useTypewriter } from "react-simple-typewriter";
+import { AiOutlineRight } from 'react-icons/ai';
 
-const Home = () => {
-  const [typeEffect1] = useTypewriter({
-    words: ["Welcome to my personal website", "I am Software Engineer 💻"],
+export default function Home() {
+  const [typeEffect] = useTypewriter({
+    words: ["Front End Developer"],
     loop: {},
     typeSpeed: 100,
-    deleteSpeed: 40,
+    deleteSpeed: 100,
   });
+  const handleScroll = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div id="home" name="home" className="p-4 lg:p-8">
-      <div className="md:flex md:flex-row flex flex-col justify-center items-center md:justify-between md:w-full w-[554px]">
-        <div className="flex flex-col gap-4 md:mt-[280px] mt-[100px] md:ml-[160px] ml-[30px]">
-          <h1 className="md:w-[553px] w-[500px] lg:text-[50px] md:text-[50px] text-[45px] font-bold">
-            Jeremia Carlo
-          </h1>
-          <h1 className="md:w-[553px] w-[500px] lg:text-[50px] md:text-[50px] text-[45px] font-bold">
-            Christianto Silitonga
-          </h1>
-
-          <p className="md:w-[400px] w-[350px] md:text-[35px] text-[30px] font-extralight text-start">
-            Hi everyone 👋
-          </p>
-          <p className="md:w-[500px] w-[350px] md:text-[35px] text-[25px] font-extralight">
-            {typeEffect1}
-          </p>
-          <h2 className="md:w-[554px] w-[500px] h-[79px] md:text-[40px] text-[40px] text-[#0190ff] font-extrabold">
-            Front End Web Developer
-          </h2>
-        </div>
-        <div className="md:mt-[214px] md:mr-[120px]">
-          <img
-            className="md:w-[581px] w-[450px] h-[401px] md:h-[512px]"
-            src={Code}
-          />
+    <div id="home" name="home" className="w-full h-screen z-0 relative">
+      <div className="absolute top-0 left-0 w-full h-screen bg-black opacity-50">
+        <img
+          className="w-full h-screen object-cover"
+          src={JakartaImage}
+          alt="Jakarta"
+        />
+      </div>
+      <div className="relative z-10 text-white flex flex-col gap-y-2 items-center justify-center h-full">
+        <h1 className="text-6xl font-normal">Hello</h1>
+        <h2 className="text-3xl mt-4 font-extralight">
+          I am <span className="font-bold">{typeEffect}</span>
+        </h2>
+        <div className="flex gap-x-[1rem] lg:relative relative lg:top-[18rem] top-[12rem]">
+          <button
+            className="
+          text-white
+            w-fit
+            px-6
+            py-3
+            my-2
+            flex
+            items-center
+            rounded-md
+            bg-[#01579b]
+            group"
+            onClick={handleScroll}
+          >
+            Scroll Down
+            <span className="relative left-3 group-hover:rotate-90 duration-900">
+              <AiOutlineRight className="text-white ml-1" size={20} />
+            </span>
+          </button>
         </div>
       </div>
     </div>
   );
-};
-
-export default Home;
+}
