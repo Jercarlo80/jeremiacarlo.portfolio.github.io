@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
 
@@ -25,13 +25,32 @@ const Navbar = () => {
       href: "#experience",
     },
   ];
+
   const [navOpen, setNavOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const toggleNav = () => {
     setNavOpen(!navOpen);
   };
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="flex justify-center items-center w-full h-20 px-4 fixed bg-transparent pt-5 z-50">
+    <div
+      className={`flex justify-center items-center w-full h-20 px-4 fixed pt-5 z-50 transition-all duration-300 ${
+        scrollPosition > 0 ? "bg-black" : "bg-transparent"
+      }`}
+    >
       <ul className="hidden md:flex">
         {links.map(({ id, link, href }) => (
           <li
@@ -45,7 +64,7 @@ const Navbar = () => {
               cursor-pointer
             "
           >
-            <a className="" href={href}>{link}</a>
+            <a href={href}>{link}</a>
           </li>
         ))}
       </ul>
@@ -58,9 +77,10 @@ const Navbar = () => {
         ) : (
           <GiHamburgerMenu color="white" size={30} />
         )}
-        {navOpen && (
-          <ul
-            className="
+      </div>
+      {navOpen && (
+        <ul
+          className="
             flex
             flex-col
             justify-center
@@ -73,27 +93,26 @@ const Navbar = () => {
             bg-black
             text-black
           "
-          >
-            {links.map(({ id, link, href }) => (
-              <li
-                key={id}
-                className="
-                  px-4 
-                  py-6
-                  text-2xl
-                  text-gray-500 
-                  hover:scale-110 
-                  duration-200 
-                  hover:text-[#ffff] 
-                  cursor-pointer
-                "
-              >
-                <a href={href}>{link}</a>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
+        >
+          {links.map(({ id, link, href }) => (
+            <li
+              key={id}
+              className="
+                px-4 
+                py-6
+                text-2xl
+                text-gray-500 
+                hover:scale-110 
+                duration-200 
+                hover:text-[#ffff] 
+                cursor-pointer
+              "
+            >
+              <a href={href}>{link}</a>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
